@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Page to PDF",
+  "version": "1.7.0",
+  "description": "一键把当前标签页导出为 PDF，直接保存到默认下载目录。",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "debugger",
+    "downloads",
+    "notifications",
+    "offscreen",
+    "scripting",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Page 工具箱",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
